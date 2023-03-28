@@ -18,6 +18,22 @@
 		</dict>
 	</array>
 	<!-- End of the Google Sign-in Section -->
+
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+  <key>CFBundleURLSchemes</key>
+  <array>
+    <string>fb1629389590838293</string>
+  </array>
+  </dict>
+</array>
+<key>FacebookAppID</key>
+<string>1629389590838293</string>
+<key>FacebookClientToken</key>
+<string>401a03fd0b6de05ad808db1bb48c86f4</string>
+<key>FacebookDisplayName</key>
+<string>Login App</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

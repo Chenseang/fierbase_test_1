@@ -2,6 +2,7 @@ import 'package:firebase_test_1/local_storage/local_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../Firebase/auth_service.dart';
 import 'home_screen.dart';
 import 'login_screen.dart';
 
@@ -24,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         } else {
           Get.offAll(() => const HomeScreen());
         }
+        
       },
     );
     super.initState();

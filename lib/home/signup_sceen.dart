@@ -25,6 +25,7 @@ class SignUpScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Form(
           key: formKey,
+          autovalidateMode: AutovalidateMode.always,
           child: Column(
             children: [
               Container(

@@ -1,4 +1,4 @@
-import 'package:firebase_test_1/home/splash_screen.dart';
+import 'package:firebase_test_1/Firebase/auth_service.dart';
 import 'package:firebase_test_1/local_storage/local_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -22,11 +22,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.cyan,
-        ),
-        debugShowCheckedModeBanner: false,
-        home: const SplashScreen());
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.cyan,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: AuthService().handleAuthState(),
+    );
   }
 }
